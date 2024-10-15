@@ -1,21 +1,11 @@
-import Image from "next/image";
+import Header from "./components/header";
+import Home from "./components/home";
 
-const details = ["Home", "About Me", "Projects", "Education"]
-
-export default function Home() {
+export default function Main() {
   return (
     <div>
-      To be added!
+      <Header/>
+      <Home/>
     </div>
   );
-}
-
-export function Header() {
-  return (
-    <header>
-      <div>
-        
-      </div>
-    </header>
-  )
 }
