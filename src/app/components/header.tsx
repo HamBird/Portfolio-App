@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function Header () {
@@ -29,15 +30,17 @@ export default function Header () {
             Home
         </a>
         <div className="flex items-center space-x-4">
-            <a href="/about" className="text-white">About Me</a>
-            <a href="/education" className="text-white">Education</a>
+            <Link href="/about" className="text-white">About Me</Link>
+            <Link href="/education" className="text-white">Education</Link>
             <div className="relative group">
                 <p className="text-white cursor-pointer">Projects</p>
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-95 group-hover:scale-100 transition-all duration-150 ease-out">
-                    <a href="https://github.com/HamBird/NAIT-Capstone" target="_blank" className="block px-4 py-2 text-gray-800 hiver:bg-gray-200">Automatic Door Lock</a>
-                    <a href="/gallery" className="block px-4 py-2 text-gray-800 hiver:bg-gray-200">Express Photo Gallery</a>
+                <div className="absolute right-0 mt-1 w-48 bg-white shadow-lg opacity-0 group-hover:opacity-95 group-hover:scale-100 transition-all duration-150 ease-out">
+                    <a href="https://github.com/HamBird/NAIT-Capstone" target="_blank" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Automatic Door Lock</a>
+                    <a href="https://github.com/HamBird/Express-JS-Photo-Gallery" target="_blank" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Express Photo Gallery</a>
+                    <a href="https://github.com/HamBird/Portfolio-App" target="_blank" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Portfolio App</a>
                 </div>
             </div>
+            <a href="https://github.com/HamBird" target="_blank" className="text-white">Github</a>
         </div>
       </div>
     </nav>
