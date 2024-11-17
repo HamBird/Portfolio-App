@@ -1,11 +1,11 @@
 import Header from "../components/header";
-import About from "../components/about";
+import Projects from "../components/projects";
 
-export default function EducationPage() {
+export default function AboutPage() {
     return (
         <div>
             <Header/>
-            <About/>
+            <Projects/>
         </div>
     )
 }
