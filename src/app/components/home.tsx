@@ -22,7 +22,13 @@ export default function Home() {
                     My Name Is Nathaniel Rojas
                 </p>
                 <p className="text-lg pt-5">
-                    Exploring different technologies including PLC programming, Embedded Design and programming in C, 
+                    I'm currently exploring different skills from building C# applications, Web applications and
+                    IoT devices. My current projects range from web technologies such as Express.js and Next.js to
+                    using communicating to IoT modules on C. Feel free to explore my portfolio and I'd love the chance to display
+                    my skills.  
+                </p>
+                <p className="pt-2">
+                    Below are some of the different technologies I have used:
                 </p>
                 <div className="relative">
                     <Image
@@ -39,3 +45,9 @@ export default function Home() {
         </Content>
     );
 }
+{/*
+    I'm currently exploring different skills from building C# applications, Web applications and
+    IoT devices. My current projects range from web technologies such as Express.js and Next.js to
+    using communicating to IoT modules on C. Feel free to explore my portfolio and I'd love the chance to display
+    my skills.    
+*/}

@@ -1,5 +1,4 @@
 'use client';
-import Image from "next/image";
 import React, {useState} from 'react';
 import Content from "./content";
 import "../globals.css";
@@ -39,23 +38,6 @@ export default function Projects() {
     }
 
     return (
-        // <div className="mt-7">
-        //     <Image
-        //         className="dark:invert -z-10"
-        //         src="/About.jpg"
-        //         alt="Background Pic"
-        //         fill={true}
-        //         priority
-        //     />
-        //     <div className="container bg-gray-400 bg-opacity-75 text-black flex flex-col items-center h-[77vh] sm:h-[91vh] rounded-3xl mx-auto overflow-y-auto scrollbar-hide text-center">
-        //         <div className="text-2xl sticky top-0 bg-gray-600 text-white w-full pt-6 pb-5 z-20">Active Projects</div>
-        //         <div className="w-[60%] pt-9 pb-14">
-        //             {
-        //                 projects.map((project, index) => Dropdowns(project, openDropDown === project.name, toggleDropdown))
-        //             }
-        //         </div>
-        //     </div>
-        // </div>
         <Content picture="/About.jpg" container="container bg-gray-400 bg-opacity-75 text-black flex flex-col items-center h-[77vh] sm:h-[91vh] rounded-3xl mx-auto overflow-y-auto scrollbar-hide text-center">
             <div className="text-2xl sticky top-0 bg-gray-600 text-white w-full pt-6 pb-5 z-20">Active Projects</div>
             <div className="w-[60%] pt-9 pb-14">
