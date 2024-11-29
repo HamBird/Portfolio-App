@@ -38,9 +38,9 @@ export default function Projects() {
     }
 
     return (
-        <Content picture="/About.jpg" container="container bg-gray-400 bg-opacity-75 text-black flex flex-col items-center h-[77vh] sm:h-[91vh] rounded-3xl mx-auto overflow-y-auto scrollbar-hide text-center">
+        <Content picture="/Projects.jpg" container="container bg-gray-400 bg-opacity-75 text-black flex flex-col items-center h-[calc(100vh-4.4rem)] sm:h-[91vh] rounded-3xl mx-auto overflow-y-auto scrollbar-hide text-center">
             <div className="text-2xl sticky top-0 bg-gray-600 text-white w-full pt-6 pb-5 z-20">Active Projects</div>
-            <div className="w-[60%] pt-9 pb-14">
+            <div className="sm:w-[60%] w-[90%] pt-9 pb-14">
                 {
                     projects.map((project, index) => Dropdowns(project, openDropDown === project.name, toggleDropdown))
                 }
@@ -73,10 +73,8 @@ const Dropdowns = ( data:projectData, isOpen:boolean, toggle:(name: string)=>voi
         <div key={data.name} className={`rounded-xl text-white bg-purple-600 mt-2 pt-3 ${isOpen ? "border-2 border-black" : "border-0"}`}>
             <p className="cursor-pointer h-12 text-xl pt-1" onClick={() => toggle(data.name)}>{data.name}</p>
             {isOpen && (<div className="flex flex-row flex-wrap bg-white rounded-b-xl transition-all duration-150 ease-out">
-                {data.detail !== undefined && (<div className="px-4 py-2 text-gray-800 text-l w-full font-bold">{data.detail}</div>) }
-                {
-                    links
-                }
+                {data.detail !== undefined && (<div className="px-4 py-2 text-gray-800 text-base sm:text-lg w-full font-bold">{data.detail}</div>) }
+                {links}
             </div>)}
         </div>
     );

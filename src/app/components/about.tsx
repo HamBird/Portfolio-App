@@ -4,7 +4,8 @@ import Content from "./content";
 export default function About() {
 
     return (
-        <Content picture="/Education.jpg" container="container bg-white bg-opacity-75 text-black flex flex-col items-center h-[77vh] sm:h-[91vh] rounded-3xl mx-auto">
+        <Content picture="/About.jpg" container="container bg-white bg-opacity-75 text-black flex flex-col items-center h-[calc(100vh-4.4rem)] sm:h-[91vh] rounded-3xl mx-autogh">
+            {/* container bg-gray-400 bg-opacity-75 text-black flex flex-col items-center h-[77vh] sm:h-[91vh] rounded-3xl mx-auto overflow-y-auto scrollbar-hide text-center */}
             <div className="w-full h-1/2 flex flex-row justify-center mt-[3%]">
                 <div className="w-1/5 h-[50%] mt-[4%] pl-[7%]">
                     <div className="h-[100%] relative opacity-85">
@@ -19,7 +20,7 @@ export default function About() {
                             priority
                         />
                     </div>
-                    <p className="mt-[10%] text-center">Northern Alberta Institute of Technology</p>
+                    <p className="mt-[10%] hidden sm:block text-center">Northern Alberta Institute of Technology</p>
                 </div>
                 <div className="w-4/5 h-1/3 text-xl pr-[15%] pl-[15%] pt-7">
                     <p className="text-2xl font-bold mb-5 text-center">About Me</p>

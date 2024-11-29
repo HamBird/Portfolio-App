@@ -7,24 +7,20 @@ interface ContentProps {
     container?: string;
 }
 
-export default function Content({children, picture, container}: ContentProps) {
+export default function Content({children, picture, container = "container bg-white bg-opacity-75 text-black flex items-center justify-between h-[calc(100vh-4.4rem)] sm:h-[91vh] p-9 rounded-3xl mx-auto"}: ContentProps) {
     return (
-    <div className="m-7">
+    <div className="sm:m-7 m-2">
         <Image
             className="dark:invert -z-10"
             src={picture}
+            style={{backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover", objectFit: "cover"}}
             alt="Background Pic"
             fill={true}
             priority
         />
-        {/* <div className="container bg-white bg-opacity-75 text-black flex items-center justify-between h-[77vh] sm:h-[91vh] p-9 rounded-3xl mx-auto"> */}
         <div className={container}>
            {children}
         </div>
     </div>
     )
-}
-
-Content.defaultProps = {
-    container: "container bg-white bg-opacity-75 text-black flex items-center justify-between h-[77vh] sm:h-[91vh] p-9 rounded-3xl mx-auto"
 }
